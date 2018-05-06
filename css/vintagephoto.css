@@ -217,3 +217,39 @@ h2 {
     border-radius: 5px;
     max-width: 400px;
 }
+#contact {
+    background-color: #274a6c;
+    color: #fff;
+    padding: 20px;
+    font-size: 1.3em;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+#contact-heading {
+    color: white;
+    
+}
+#contact-us {
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 60%;
+}
+.contact-input, textarea,
+.contact-submit
+{
+    border: 5px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+
+.contact-submit {
+    background-color: rgb(216, 146, 147);
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 1.1em;
+    width: 50%;
+    align-self: center;
+}
