@@ -201,3 +201,19 @@ h2 {
     font-size: 1.3em;
     visibility: hidden;
 }
+
+#gallery-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 20px;
+    width: 70%;
+}
+.gallery-card {
+    padding: 10px;
+
+}
+.gallery-card_image {
+    border-radius: 5px;
+    max-width: 400px;
+}
