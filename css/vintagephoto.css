@@ -1,0 +1,203 @@
+body {
+    background-color: #ebe6e6;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+body,
+html {
+    margin: 0;
+    height: 100%
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+#navbar {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    padding: 10px;
+    font-size: 1.2em
+}
+
+#nav-title {
+    margin-right: auto;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    font-size: 1.2em;
+    transition: text-decoration 1s;
+}
+
+.nav-link:hover {
+    color: rgb(216, 146, 147);
+    text-decoration: underline rgb(216, 146, 147);
+}
+
+.hero-wrapper {
+    height: 100%;
+}
+
+#hero-image {
+    background-image: url("../images/heroflower2.jpg");
+    height: 90%;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#hero-txt {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2em;
+}
+
+#hero-subheading {
+    font-size: 1.3em;
+}
+
+#hero-heading {
+    font-size: 3em;
+    background-color: rgba(117, 111, 111, 0.6);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#hero-btn {
+    background-color: rgb(216, 146, 147);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    filter: none;
+    font-size: 1.2em;
+}
+
+#hero-btn:focus,
+#hero-btn:hover {
+    background-color: #fff;
+    color: rgb(216, 146, 147);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Julius Sans One', sans-serif;
+    letter-spacing: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+#wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 10px;
+    border-bottom: 1px dashed white;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+#content {
+    display: flex;
+    flex-flow: column;
+    font-size: 1.5em;
+    align-content: left;
+    justify-content: center;
+    background-color: white;
+    width: 40%;
+    padding: 70px;
+    padding-right: 130px;
+    border-radius: 5px;
+}
+
+#man-snow_box {
+    border-radius: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: -130px;
+    background: transparent;
+}
+
+#man-snow_img {
+    border-radius: 100%;
+    border: 10px solid white;
+    padding: 10px;
+}
+
+#content-text {
+    margin: 30px;
+    line-height: 1.2em;
+    margin-right: 100px;
+    max-width: 60%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.vintage-team {
+    display: flex;
+    max-width: 70%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+#vintage-team_heading {
+    padding-bottom: 120px;
+}
+
+.vintage-team_card {
+    min-width: 250px;
+    display: flex;
+    flex-flow: column wrap;
+    transition-duration: 1s;
+    align-items: center;
+    border-radius: 5px;
+    background-color: white;
+    padding: 40px;
+    margin: 10px;
+}
+
+.vintage-team_photo {
+    border-radius: 100%;
+    max-width: 200px;
+    transition: 1s;
+}
+
+.vintage-team_name {
+    text-transform: uppercase;
+    color: rgb(216, 146, 147);
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.vintage-team_description {
+    max-width: 230px;
+    font-size: 1.3em;
+    visibility: hidden;
+}
