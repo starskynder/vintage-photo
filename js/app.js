@@ -23,7 +23,7 @@ function initialCard() {
 function changeCard(e) {
     console.log(this);
     console.log(this.children);
-    this.style.backgroundColor = "rgb(55, 80, 128)";
+    this.style.backgroundColor = "#274a6c";
     this.style.color = "#fff";
     this.children[0].style.marginTop = "-100px";
     this.children[2].style.visibility = "visible";
