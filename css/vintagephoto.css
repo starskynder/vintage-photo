@@ -209,14 +209,16 @@ h2 {
     margin: 20px;
     width: 70%;
 }
+
 .gallery-card {
     padding: 10px;
-
 }
+
 .gallery-card_image {
     border-radius: 5px;
     max-width: 400px;
 }
+
 #contact {
     background-color: #274a6c;
     color: #fff;
@@ -225,27 +227,27 @@ h2 {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    
 }
+
 #contact-heading {
     color: white;
-    
 }
+
 #contact-us {
     padding: 20px;
     display: flex;
     flex-flow: column wrap;
     width: 60%;
 }
-.contact-input, textarea,
-.contact-submit
-{
+
+.contact-input,
+textarea,
+.contact-submit {
     border: 5px;
     padding: 10px;
     margin: 20px;
     border-radius: 10px;
 }
-
 
 .contact-submit {
     background-color: rgb(216, 146, 147);
@@ -255,15 +257,21 @@ h2 {
     align-self: center;
 }
 
+.contact-submit:focus,
+.contact-submit:hover {
+    background-color: #fff;
+    color: rgb(216, 146, 147);
+}
+
 #social-link {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     background-color: rgb(216, 146, 147);
     padding: 20px;
-    
     padding-top: 20px;
 }
+
 .social-link_icon {
     min-width: 30px;
     margin: 5px;
@@ -273,8 +281,8 @@ h2 {
     border-radius: 5px;
     font-size: 1.5em;
     text-align: center;
-
 }
+
 .social-link_icon:focus,
 .social-link_icon:hover {
     background-color: #274a6c;
@@ -286,8 +294,8 @@ h2 {
     justify-content: center;
     background-color: #fff;
     text-transform: uppercase;
-    
 }
+
 .credits p {
     margin-right: 20px;
 }
