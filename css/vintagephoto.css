@@ -225,6 +225,7 @@ h2 {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    border-bottom: 1px solid #fff;
 }
 #contact-heading {
     color: white;
@@ -252,4 +253,29 @@ h2 {
     font-size: 1.1em;
     width: 50%;
     align-self: center;
+}
+
+#social-link {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: rgb(216, 146, 147);
+    padding: 20px;
+    
+    padding-top: 20px;
+}
+.social-link_icon {
+    min-width: 30px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid white;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.5em;
+    text-align: center;
+
+}
+.social-link_icon:focus,
+.social-link_icon:hover {
+    background-color: #274a6c;
 }
