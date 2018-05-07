@@ -225,7 +225,7 @@ h2 {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    border-bottom: 1px solid #fff;
+    
 }
 #contact-heading {
     color: white;
@@ -278,4 +278,16 @@ h2 {
 .social-link_icon:focus,
 .social-link_icon:hover {
     background-color: #274a6c;
+}
+
+.credits {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #fff;
+    text-transform: uppercase;
+    
+}
+.credits p {
+    margin-right: 20px;
 }
