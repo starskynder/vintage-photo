@@ -211,12 +211,54 @@ h2 {
 }
 
 .gallery-card {
-    padding: 10px;
+    margin: 10px;
+    position: relative;
 }
 
 .gallery-card_image {
     border-radius: 5px;
     max-width: 400px;
+}
+
+.overlay {
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(216, 146, 147);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.overlay p {
+    padding: 10px;
+    text-align: center;
+}
+
+.overlay-title {
+    text-transform: uppercase;
+    display: block;
+    margin: 10px;
+    color: #fff;
+}
+
+.gallery-cards_overlaybtn {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    
+}
+.gallery-cards_overlaybtn:focus,
+.gallery-cards_overlaybtn:hover {
+    background-color: #274a6c;
+    color: #fff;
+}
+.gallery-card:hover .overlay {
+    width: 50%;
 }
 
 #contact {
