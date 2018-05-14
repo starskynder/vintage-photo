@@ -341,3 +341,87 @@ textarea,
 .credits p {
     margin-right: 20px;
 }
+
+@media (max-width: 1049px) {
+    .vintage-team {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .vintage-team_card {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 620px) {
+    #wrapper {
+        flex-flow: column wrap;
+        justify-items: center;
+        margin: 10px;
+    }
+    #content {
+        padding: 15px;
+        padding-top: 30px;
+        justify-items: center;
+        width: auto;
+    }
+    #man-snow_box {
+        margin: auto;
+        margin-bottom: -120px;
+        order: -1;
+        z-index: 1;
+    }
+    #hero-image {
+        background-image: url("../images/heroflower620_2x.jpg");
+    }
+    #social-link {
+        flex-flow: column wrap;
+        align-content: center;
+        align-items: center;
+    }
+    #social-link h3 {
+        margin: auto;
+        margin-bottom: 10px;
+
+    }
+    
+    #contact-us {
+        width: 80%;
+    }
+}
+
+@media (max-width: 550px) {
+    #hero-image {
+        background-image: url("../images/heroflower620_2x.jpg");
+        height: 50%;
+    }
+    #hero-subheading {
+        display: none;
+    }
+    #hero-heading {
+        font-size: 1.7em;
+    }
+}
+
+@media (max-width: 434px) {
+    .gallery-card_image {
+        width: 320px;
+    }
+    #man-snow_img {
+        max-width:200px;
+    }
+    #gallery p {
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    .social-link_icons {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .vintage-team_card {
+        min-width: 200px;
+    }
+    #vintage-team_heading {
+        margin: 5px;
+    }
+}
