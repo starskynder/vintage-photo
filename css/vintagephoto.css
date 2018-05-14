@@ -171,7 +171,6 @@ h2 {
 }
 
 .vintage-team_card {
-    min-width: 250px;
     display: flex;
     flex-flow: column wrap;
     transition-duration: 1s;
@@ -381,19 +380,13 @@ textarea,
     #social-link h3 {
         margin: auto;
         margin-bottom: 10px;
-
     }
-    
     #contact-us {
         width: 80%;
     }
 }
 
 @media (max-width: 550px) {
-    #hero-image {
-        background-image: url("../images/heroflower620_2x.jpg");
-        height: 50%;
-    }
     #hero-subheading {
         display: none;
     }
@@ -404,10 +397,10 @@ textarea,
 
 @media (max-width: 434px) {
     .gallery-card_image {
-        width: 320px;
+        width: 250px;
     }
     #man-snow_img {
-        max-width:200px;
+        max-width: 200px;
     }
     #gallery p {
         padding: 10px;
@@ -418,10 +411,19 @@ textarea,
         flex-flow: row wrap;
         justify-content: center;
     }
-    .vintage-team_card {
-        min-width: 200px;
-    }
     #vintage-team_heading {
         margin: 5px;
+    }
+    #vintage-team {
+        max-width: 80%;
+    }
+    .overlay {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 320px) {
+    .vintage-team_card {
+        max-width: 150px;
     }
 }
