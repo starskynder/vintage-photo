@@ -162,7 +162,6 @@ h2 {
 
 .vintage-team {
     display: flex;
-    max-width: 70%;
     flex-flow: row nowrap;
     justify-content: space-around;
 }
@@ -250,13 +249,14 @@ h2 {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    
 }
+
 .gallery-cards_overlaybtn:focus,
 .gallery-cards_overlaybtn:hover {
     background-color: #274a6c;
     color: #fff;
 }
+
 .gallery-card:hover .overlay {
     width: 50%;
 }
