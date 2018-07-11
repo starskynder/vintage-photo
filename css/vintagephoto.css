@@ -29,18 +29,24 @@ img {
     max-width: 100%;
 }
 
+nav,
+.navbar,
+.vintage-team,
+#gallery-cards,
+#social-link,
+.credits {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 /*----------------------Navigation----------------*/
 
 nav {
-    display: flex;
-    flex-flow: row wrap;
     background-color: white;
     padding: 10px;
 }
 
 .navbar {
-    display: flex;
-    flex-flow: row wrap;
     list-style-type: none;
     padding: 10px;
     font-size: 1.2em
@@ -170,8 +176,6 @@ main {
 /*------------------Vintage Team-----------------*/
 
 .vintage-team {
-    display: flex;
-    flex-flow: row wrap;
     justify-content: space-around;
     padding-top: 30px;
 }
@@ -221,8 +225,6 @@ main {
 }
 
 #gallery-cards {
-    display: flex;
-    flex-flow: row wrap;
     justify-content: center;
     margin: 20px;
     width: 70%;
@@ -329,8 +331,6 @@ textarea,
 /*--------------------Social--------------------*/
 
 #social-link {
-    display: flex;
-    flex-flow: row wrap;
     justify-content: center;
     background-color: rgb(216, 146, 147);
     padding: 20px;
@@ -356,8 +356,6 @@ textarea,
 /*----------------------Credits-----------------*/
 
 .credits {
-    display: flex;
-    flex-flow: row wrap;
     justify-content: center;
     background-color: #fff;
     text-transform: uppercase;
