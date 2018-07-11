@@ -1,3 +1,5 @@
+/*--------------General Styles----------------*/
+
 body {
     background-color: #ebe6e6;
     font-family: 'Advent Pro', sans-serif;
@@ -7,95 +9,6 @@ body,
 html {
     margin: 0;
     height: 100%
-}
-
-nav {
-    display: flex;
-    flex-flow: row wrap;
-    background-color: white;
-    padding: 10px;
-}
-
-main {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-}
-
-#navbar {
-    display: flex;
-    flex-flow: row wrap;
-    list-style-type: none;
-    padding: 10px;
-    font-size: 1.2em
-}
-
-#nav-title {
-    margin-right: auto;
-}
-
-.nav-link {
-    text-decoration: none;
-    padding: 5px;
-    color: black;
-    font-size: 1.2em;
-    transition: text-decoration 1s;
-}
-
-.nav-link:hover {
-    color: rgb(216, 146, 147);
-    text-decoration: underline rgb(216, 146, 147);
-}
-
-.hero-wrapper {
-    height: 100%;
-}
-
-#hero-image {
-    background-image: url("../images/heroflower2.jpg");
-    height: 90%;
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-#hero-txt {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 1.2em;
-}
-
-#hero-subheading {
-    font-size: 1.3em;
-}
-
-#hero-heading {
-    font-size: 3em;
-    background-color: rgba(117, 111, 111, 0.6);
-    border-radius: 5px;
-    padding: 5px;
-}
-
-#hero-btn {
-    background-color: rgb(216, 146, 147);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    filter: none;
-    font-size: 1.2em;
-}
-
-#hero-btn:focus,
-#hero-btn:hover {
-    background-color: #fff;
-    color: rgb(216, 146, 147);
 }
 
 h1,
@@ -108,11 +21,109 @@ h6 {
     letter-spacing: 10px;
 }
 
+h2 {
+    text-align: center;
+}
+
 img {
     max-width: 100%;
 }
 
-#wrapper {
+/*----------------------Navigation----------------*/
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    padding: 10px;
+    font-size: 1.2em
+}
+
+.nav_title {
+    margin-right: auto;
+}
+
+.nav_link {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    font-size: 1.2em;
+    transition: text-decoration 1s;
+}
+
+.nav_link:focus,
+.nav_link:hover {
+    color: rgb(216, 146, 147);
+    text-decoration: underline rgb(216, 146, 147);
+}
+
+/*------------------Header-------------------*/
+
+.hero_image {
+    background-image: url("../images/heroflower2.jpg");
+    height: 90%;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero_txt {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2em;
+}
+
+.hero_subheading {
+    font-size: 1.3em;
+}
+
+.hero_heading {
+    font-size: 3em;
+    background-color: rgba(117, 111, 111, 0.6);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.hero_btn {
+    background-color: rgb(216, 146, 147);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    filter: none;
+    font-size: 1.2em;
+}
+
+.hero_btn:focus,
+.hero_btn:hover {
+    background-color: #fff;
+    color: rgb(216, 146, 147);
+}
+
+/*-------------------Main---------------------*/
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+/*-------------------About-------------------*/
+
+#about {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -122,7 +133,7 @@ img {
     margin-bottom: 30px;
 }
 
-#content {
+#about_content {
     display: flex;
     flex-flow: column;
     font-size: 1.5em;
@@ -149,25 +160,25 @@ img {
     padding: 10px;
 }
 
-#content-text {
+#about_text {
     margin: 30px;
     line-height: 1.2em;
     margin-right: 100px;
     max-width: 60%;
 }
 
-h2 {
-    text-align: center;
-}
+/*------------------Vintage Team-----------------*/
 
 .vintage-team {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
+    padding-top: 30px;
 }
 
 #vintage-team_heading {
     padding-bottom: 120px;
+    flex: 100%;
 }
 
 .vintage-team_card {
@@ -198,6 +209,15 @@ h2 {
     max-width: 230px;
     font-size: 1.3em;
     visibility: hidden;
+}
+
+/*--------------------------Gallery----------------------*/
+
+.gallery {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-top: 90px;
 }
 
 #gallery-cards {
@@ -260,6 +280,8 @@ h2 {
     width: 50%;
 }
 
+/*------------------Contact------------------*/
+
 #contact {
     background-color: #274a6c;
     color: #fff;
@@ -270,7 +292,7 @@ h2 {
     align-items: center;
 }
 
-#contact-heading {
+.contact_heading {
     color: white;
 }
 
@@ -304,6 +326,8 @@ textarea,
     color: rgb(216, 146, 147);
 }
 
+/*--------------------Social--------------------*/
+
 #social-link {
     display: flex;
     flex-flow: row wrap;
@@ -329,6 +353,8 @@ textarea,
     background-color: #274a6c;
 }
 
+/*----------------------Credits-----------------*/
+
 .credits {
     display: flex;
     flex-flow: row wrap;
@@ -341,6 +367,8 @@ textarea,
     margin-right: 20px;
 }
 
+/*-------------------Media Queries---------------*/
+
 @media (max-width: 1049px) {
     .vintage-team {
         flex-flow: row wrap;
@@ -350,23 +378,23 @@ textarea,
         margin-bottom: 100px;
     }
 }
-@media only screen 
-and (max-width:740px)
-and (orientation: landscape) {
-    #hero-subheading {
+
+@media only screen and (max-width:740px) and (orientation: landscape) {
+    .hero_subheading {
         display: none;
     }
-    #hero-heading {
+    .hero_heading {
         font-size: 1.7em;
     }
 }
+
 @media (max-width: 620px) {
-    #wrapper {
+    #about {
         flex-flow: column wrap;
         justify-items: center;
         margin: 10px;
     }
-    #content {
+    #about_content {
         padding: 15px;
         padding-top: 30px;
         justify-items: center;
@@ -378,7 +406,7 @@ and (orientation: landscape) {
         order: -1;
         z-index: 1;
     }
-    #hero-image {
+    .hero_image {
         background-image: url("../images/heroflower620_2x.jpg");
     }
     #social-link {
@@ -396,14 +424,13 @@ and (orientation: landscape) {
 }
 
 @media (max-width: 550px) {
-    #hero-subheading {
+    .hero_subheading {
         display: none;
     }
-    #hero-heading {
+    .hero_heading {
         font-size: 1.7em;
     }
 }
-
 
 @media (max-width: 434px) {
     .gallery-card_image {
@@ -412,7 +439,7 @@ and (orientation: landscape) {
     #man-snow_img {
         max-width: 200px;
     }
-    #gallery p {
+    .gallery p {
         padding: 10px;
         font-size: 1.2em;
     }
