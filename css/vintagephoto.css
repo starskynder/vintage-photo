@@ -8,7 +8,7 @@ body {
 body,
 html {
     margin: 0;
-    height: 100%
+    height: 100%;
 }
 
 h1,
@@ -27,6 +27,20 @@ h2 {
 
 img {
     max-width: 100%;
+}
+
+.link {
+    color: #000;
+}
+
+.link:visited {
+    color: #274a6c;
+}
+
+.link:focus,
+.link:hover {
+    color: #d89293;
+    text-decoration: none;
 }
 
 nav,
@@ -66,8 +80,8 @@ nav {
 
 .nav_link:focus,
 .nav_link:hover {
-    color: rgb(216, 146, 147);
-    text-decoration: underline rgb(216, 146, 147);
+    color: #d89293;
+    text-decoration: underline #d89293;
 }
 
 /*------------------Header-------------------*/
@@ -104,7 +118,7 @@ nav {
 }
 
 .hero_btn {
-    background-color: rgb(216, 146, 147);
+    background-color: #d89293;
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -212,27 +226,50 @@ main {
 .vintage-team_description {
     max-width: 230px;
     font-size: 1.3em;
-    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.vintage-team_card:hover .vintage-team_photo {
+    transform: translate(0, -50%);
+    box-shadow: 0 0 0 6px #fff, 0 0 0 12px #000;
+}
+
+.vintage-team_card:hover .vintage-team_description {
+    opacity: 1;
 }
 
 /*--------------------------Gallery----------------------*/
 
 .gallery {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
     padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.gallery_heading,
+.gallery_subheading {
+    text-align: center;
+    flex: 100%;
+}
+
+.gallery_subheading {
+    font-size: 1.3em;
+    padding-bottom: 30px;
 }
 
 #gallery-cards {
-    justify-content: center;
-    margin: 20px;
-    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: auto;
 }
 
 .gallery-card {
     margin: 10px;
     position: relative;
+    text-align: center;
+    transition: all 0.4s ease-in;
 }
 
 .gallery-card_image {
@@ -246,11 +283,11 @@ main {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgb(216, 146, 147);
+    background-color: #d89293;
     overflow: hidden;
     width: 0;
     height: 100%;
-    transition: .5s ease;
+    transition: all .5s ease;
 }
 
 .overlay p {
@@ -282,12 +319,20 @@ main {
     width: 50%;
 }
 
+/*---------------Footer--------------*/
+
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0;
+    padding: 0;
+}
+
 /*------------------Contact------------------*/
 
 #contact {
     background-color: #274a6c;
     color: #fff;
-    padding: 20px;
     font-size: 1.3em;
     display: flex;
     flex-flow: column wrap;
@@ -299,9 +344,9 @@ main {
 }
 
 #contact-us {
-    padding: 20px;
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
     width: 60%;
 }
 
@@ -315,7 +360,7 @@ textarea,
 }
 
 .contact-submit {
-    background-color: rgb(216, 146, 147);
+    background-color: #d89293;
     font-family: 'Advent Pro', sans-serif;
     font-size: 1.1em;
     width: 50%;
@@ -332,12 +377,13 @@ textarea,
 
 #social-link {
     justify-content: center;
-    background-color: rgb(216, 146, 147);
+    background-color: #d89293;
     padding: 20px;
     padding-top: 20px;
 }
 
 .social-link_icon {
+    transition: all 0.4s ease-in;
     min-width: 30px;
     margin: 5px;
     padding: 10px;
@@ -367,98 +413,118 @@ textarea,
 
 /*-------------------Media Queries---------------*/
 
-@media (max-width: 1049px) {
-    .vintage-team {
-        flex-flow: row wrap;
+@media (max-width: 1600px) {
+    #gallery-cards {
         justify-content: center;
     }
     .vintage-team_card {
         margin-bottom: 100px;
     }
-}
-
-@media only screen and (max-width:740px) and (orientation: landscape) {
-    .hero_subheading {
-        display: none;
-    }
-    .hero_heading {
-        font-size: 1.7em;
-    }
-}
-
-@media (max-width: 620px) {
-    #about {
+    .gallery {
         flex-flow: column wrap;
-        justify-items: center;
-        margin: 10px;
-    }
-    #about_content {
-        padding: 15px;
-        padding-top: 30px;
-        justify-items: center;
-        width: auto;
-    }
-    #man-snow_box {
-        margin: auto;
-        margin-bottom: -120px;
-        order: -1;
-        z-index: 1;
-    }
-    .hero_image {
-        background-image: url("../images/heroflower620_2x.jpg");
-    }
-    #social-link {
-        flex-flow: column wrap;
-        align-content: center;
         align-items: center;
     }
-    #social-link h3 {
-        margin: auto;
-        margin-bottom: 10px;
+    @media only screen and (max-width:740px) and (orientation: landscape) {
+        .hero_subheading {
+            display: none;
+        }
+        .hero_heading {
+            font-size: 1.7em;
+        }
     }
-    #contact-us {
-        width: 80%;
+    @media (max-width: 620px) {
+        #about {
+            flex-flow: column wrap;
+            justify-items: center;
+            margin: 10px;
+        }
+        #about_content {
+            padding: 15px;
+            padding-top: 30px;
+            justify-items: center;
+            width: auto;
+        }
+        #man-snow_box {
+            margin: auto;
+            margin-bottom: -120px;
+            order: -1;
+            z-index: 1;
+        }
+        .hero_image {
+            background-image: url("../images/heroflower620_2x.jpg");
+        }
+        #social-link {
+            flex-flow: column wrap;
+            align-content: center;
+            align-items: center;
+        }
+        #social-link h3 {
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        #contact-us {
+            width: 80%;
+        }
     }
-}
-
-@media (max-width: 550px) {
-    .hero_subheading {
-        display: none;
+    @media (max-width: 550px) {
+        .hero_subheading {
+            display: none;
+        }
+        .hero_heading {
+            font-size: 1.7em;
+        }
     }
-    .hero_heading {
-        font-size: 1.7em;
+    @media (max-width: 434px) {
+        .gallery-card_image {
+            width: 300px;
+            height: auto;
+        }
+        #man-snow_img {
+            max-width: 200px;
+        }
+        .gallery p {
+            padding: 10px;
+            font-size: 1.2em;
+        }
+        .social-link_icons {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+        #vintage-team_heading {
+            margin: 5px;
+        }
+        #vintage-team {
+            max-width: 80%;
+        }
+        .overlay {
+            font-size: 1em;
+        }
     }
-}
-
-@media (max-width: 434px) {
-    .gallery-card_image {
-        width: 250px;
+    @media (max-width: 400px) {
+        .nav_link {
+            margin: 5px;
+        }
+        .gallery-card_image {
+            max-width: 300px;
+        }
+        .gallery-card:focus .overlay,
+        .gallery-card:hover .overlay {
+            width: 100%;
+        }
+        #about {
+            margin: auto;
+            padding: 5%;
+            padding-top: 10%;
+        }
+        .vintage-team_heading {
+            padding-bottom: 60px;
+        }
+        input,
+        textarea {
+            max-width: 90%;
+        }
+        .contact_heading {
+            font-size: 1.2em;
+        }
     }
-    #man-snow_img {
-        max-width: 200px;
-    }
-    .gallery p {
-        padding: 10px;
-        font-size: 1.2em;
-    }
-    .social-link_icons {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-    }
-    #vintage-team_heading {
-        margin: 5px;
-    }
-    #vintage-team {
-        max-width: 80%;
-    }
-    .overlay {
-        font-size: 1em;
-    }
-}
-
-@media (max-width: 320px) {
-    .vintage-team_card {
-        max-width: 150px;
-    }
-}
