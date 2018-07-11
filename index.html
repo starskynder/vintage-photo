@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Round</title>
     <link href="https://fonts.googleapis.com/css?family=Advent+Pro|Julius+Sans+One" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/vintagephoto.css">
 </head>
@@ -16,14 +17,14 @@
 
 
     <nav>
-        <h2 id="nav-title">Vintage Photo</h2>
-        <ul id="navbar">
+        <h2 class="nav_title">Vintage Photo</h2>
+        <ul class="navbar">
             <li>
-                <a href="" class="nav-link">Home</a>
-                <a href="#content" class="nav-link">About</a>
-                <a href="#vintage-team_heading" class="nav-link">The Team</a>
-                <a href="#gallery" class="nav-link">Gallery</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="" class="nav_link">Home</a>
+                <a href="#about" class="nav_link">About</a>
+                <a href="#vintage-team" class="nav_link">The Team</a>
+                <a href="#gallery" class="nav_link">Gallery</a>
+                <a href="#contact" class="nav_link">Contact</a>
             </li>
 
 
@@ -31,20 +32,20 @@
 
     </nav>
 
-    <div id="hero-image">
-        <div id="hero-txt">
-            <h1 id="hero-heading">A Touch of Fashion</h1>
-            <p id="hero-subheading">
+    <header class="hero_image">
+        <div class="hero_txt">
+            <h1 class="hero_heading">A Touch of Fashion</h1>
+            <p class="hero_subheading">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, incidunt.
             </p>
-            <button id="hero-btn">Learn More</button>
+            <button class="hero_btn">Learn More</button>
         </div>
-    </div>
+    </header>
 
     <main>
-        <div id="wrapper">
-            <div id="content">
-                <p id="content-text">
+        <section id="about">
+            <div id="about_content">
+                <p id="about_text">
                     <h2>OUR PASSION</h2>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, asperiores. Numquam quam minima neque aspernatur libero explicabo
                     corrupti voluptatem ab, repellat culpa porro at, deleniti omnis. Blanditiis magnam soluta hic incidunt
@@ -57,10 +58,10 @@
                 <img src="images/man_in_the_snow3.jpg" alt="a man walking in the snow" id="man-snow_img">
             </div>
 
-        </div>
-        <h2 id="vintage-team_heading">The Vintage Team</h2>
-        <div class="vintage-team">
+        </section>
 
+        <section class="vintage-team" id="vintage-team">
+            <h2 id="vintage-team_heading">The Vintage Team</h2>
             <div class="vintage-team_card">
 
                 <img src="images/sam.jpg" alt="sam" class="vintage-team_photo">
@@ -77,73 +78,124 @@
                 <p class="vintage-team_name">John, Founder</p>
                 <p class="vintage-team_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
-        </div>
-        <div id="gallery">
-        <h2>Gallery</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, cum?</p>
-        </div>
-        <div id="gallery-cards">
+        </section>
+        <section class="gallery" id="gallery">
+            <h2>Gallery</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, cum?</p>
 
-            <div class="gallery-card"><img src="images/typewriter.jpg" alt="typewriter" class="gallery-card_image">
-                <div class="overlay"><p><span class="overlay-title">Lorem ipsum</span> dolor sit amet consectetur, adipisicing elit. A, suscipit!<br><button class="gallery-cards_overlaybtn">Read Story</button></p>
-                    
+            <div id="gallery-cards">
+
+                <div class="gallery-card">
+                    <img src="images/typewriter.jpg" alt="typewriter" class="gallery-card_image">
+                    <div class="overlay">
+                        <p>
+                            <span class="overlay-title">Lorem ipsum</span> dolor sit amet consectetur, adipisicing elit. A, suscipit!
+                            <br>
+                            <button class="gallery-cards_overlaybtn">Read Story</button>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/photographer.jpg" alt="photographer" class="gallery-card_image">
+                    <div class="overlay">
+                        <p>
+                            <span class="overlay-title">Lorem ipsum</span>dolor sit amet consectetur, adipisicing elit. A, suscipit!
+                            <br>
+                            <button class="gallery-cards_overlaybtn">Read Story</button>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/bride.jpg" alt="bride" class="gallery-card_image">
+                    <div class="overlay">
+                        <p>
+                            <span class="overlay-title">Lorem ipsum</span>dolor sit amet consectetur, adipisicing elit. A, suscipit!
+                            <br>
+                            <button class="gallery-cards_overlaybtn">Read Story</button>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/cat.jpg" alt="cat" class="gallery-card_image">
+                    <div class="overlay">
+                        <p>
+                            <span class="overlay-title">Lorem ipsum</span>dolor sit amet consectetur, adipisicing elit. A, suscipit!
+                            <br>
+                            <button class="gallery-cards_overlaybtn">Read Story</button>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/lights.jpg" alt="cat" class="gallery-card_image">
+                    <div class="overlay">
+                        <p>
+                            <span class="overlay-title">Lorem ipsum</span> dolor sit amet consectetur, adipisicing elit. A, suscipit!
+                            <br>
+                            <button class="gallery-cards_overlaybtn">Read Story</button>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/bridge.jpg" alt="cat" class="gallery-card_image">
+                    <div class="overlay">
+                        <p>
+                            <span class="overlay-title">Lorem ipsum</span>dolor sit amet consectetur, adipisicing elit. A, suscipit!
+                            <br>
+                            <button class="gallery-cards_overlaybtn">Read Story</button>
+                        </p>
+
+                    </div>
                 </div>
             </div>
-            <div class="gallery-card"><img src="images/photographer.jpg" alt="photographer" class="gallery-card_image">
-                <div class="overlay"><p><span class="overlay-title">Lorem ipsum</span>dolor sit amet consectetur, adipisicing elit. A, suscipit!<br><button class="gallery-cards_overlaybtn">Read Story</button></p> 
-                    
-                </div>
-            </div>
-            <div class="gallery-card"><img src="images/bride.jpg" alt="bride" class="gallery-card_image">
-                <div class="overlay"><p><span class="overlay-title">Lorem ipsum</span>dolor sit amet consectetur, adipisicing elit. A, suscipit!<br><button class="gallery-cards_overlaybtn">Read Story</button></p> 
-                    
-                </div>
-            </div>
-            <div class="gallery-card"><img src="images/cat.jpg" alt="cat" class="gallery-card_image">
-                <div class="overlay"> <p><span class="overlay-title">Lorem ipsum</span>dolor sit amet consectetur, adipisicing elit. A, suscipit!<br><button class="gallery-cards_overlaybtn">Read Story</button></p>
-                    
-                </div>
-            </div>
-            <div class="gallery-card"><img src="images/lights.jpg" alt="cat" class="gallery-card_image">
-                <div class="overlay"><p><span class="overlay-title">Lorem ipsum</span> dolor sit amet consectetur, adipisicing elit. A, suscipit! <br><button class="gallery-cards_overlaybtn">Read Story</button></p>
-                   
-                </div>
-            </div>
-            <div class="gallery-card"><img src="images/bridge.jpg" alt="cat" class="gallery-card_image">
-                <div class="overlay"> <p><span class="overlay-title">Lorem ipsum</span>dolor sit amet consectetur, adipisicing elit. A, suscipit!<br><button class="gallery-cards_overlaybtn">Read Story</button></p>
-                    
-                </div>
-            </div>
-        </div>
+        </section>
     </main>
     <footer>
-      <div id="contact">
-          <h2 id="contact-heading">Contact Us</h2>
-          <form action="" id="contact-us">
-              <label for="name">Enter Your Name:</label>
-              <input type="text" id="name" class="contact-input"  placeholder="Your name">
-              <label for="email">Enter Your Email:</label>
-              <input type="email" class="contact-input" id="email" placeholder="Email">
-              <label for="message">Enter Your Message:</label>
-              <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-              <input type="submit" class="contact-submit">
-          </form>
-      </div>
-      <div id="social-link">
-          <h3>Follow Us</h3>
-          <div class="social-link_icons">
-            <i class="fab fa-facebook-f social-link_icon"><a href="#" aria-label="facebook"></a></i>
-            <i class="fab fa-twitter social-link_icon"><a href="#" aria-label="twitter"></a></i>
-            <i class="fab fa-linkedin-in social-link_icon"><a href="#" aria-label="linkedin"></a></i>
-            <i class="fab fa-instagram social-link_icon"><a href="#" aria-label="instagram"></a></i>
-            <i class="fab fa-google-plus-g social-link_icon"><a href="#" aria-label="google plus"></a></i>
-          </div>  
+        <div id="contact">
+            <h2 class="contact_heading">Contact Us</h2>
+            <form action="" id="contact-us">
+                <label for="name">Enter Your Name:</label>
+                <input type="text" id="name" class="contact-input" placeholder="Your name">
+                <label for="email">Enter Your Email:</label>
+                <input type="email" class="contact-input" id="email" placeholder="Email">
+                <label for="message">Enter Your Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <input type="submit" class="contact-submit">
+            </form>
+        </div>
+        <div id="social-link">
+            <h3>Follow Us</h3>
+            <div class="social-link_icons">
+                <i class="fab fa-facebook-f social-link_icon">
+                    <a href="#" aria-label="facebook"></a>
+                </i>
+                <i class="fab fa-twitter social-link_icon">
+                    <a href="#" aria-label="twitter"></a>
+                </i>
+                <i class="fab fa-linkedin-in social-link_icon">
+                    <a href="#" aria-label="linkedin"></a>
+                </i>
+                <i class="fab fa-instagram social-link_icon">
+                    <a href="#" aria-label="instagram"></a>
+                </i>
+                <i class="fab fa-google-plus-g social-link_icon">
+                    <a href="#" aria-label="google plus"></a>
+                </i>
+            </div>
 
-      </div>
-      <div class="credits">
-          <p>Pictures from <a href="https://unsplash.com/"> Unsplash</a></p>
-          <p>HTML, Css and JS by <a href="https://github.com/starskynder">starskynder</a> </p>
-      </div>
+        </div>
+        <div class="credits">
+            <p>Pictures from
+                <a href="https://unsplash.com/"> Unsplash</a>
+            </p>
+            <p>HTML, Css and JS by
+                <a href="https://github.com/starskynder">starskynder</a>
+            </p>
+        </div>
     </footer>
 </body>
 <script src="js/app.js"></script>
